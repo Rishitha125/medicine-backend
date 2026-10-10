@@ -5,7 +5,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/billing")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://moonlit-zuccutto-1672ce.netlify.app"
+})
 public class BillingController {
 
     @Autowired
